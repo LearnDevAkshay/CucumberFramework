@@ -22,7 +22,11 @@ public class HomePageActions {
 
     public  void validateHomePage(){
         try{
-            WebElement productTitle =  homepage.productListTitle;
+
+            String productTitle =  homepage.productListTitle.getText();
+
+
+
         }catch(Exception e){
             Assert.assertTrue("User Not Navigated to Home Page",false);
         }

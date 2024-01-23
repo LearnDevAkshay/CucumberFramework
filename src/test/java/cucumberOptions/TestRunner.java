@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features="src/test/java/features",
         glue= {"stepDefinition"},
         dryRun = false,
-        //tags = "@User1",
+       // tags = "@User2",
         plugin = "json:target/jsonReports/cucumber-report.json"
 
 )

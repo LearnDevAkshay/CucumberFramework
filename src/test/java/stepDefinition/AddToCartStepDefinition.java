@@ -48,6 +48,7 @@ public class AddToCartStepDefinition {
     public void user_is_navigated_to_user_detail_page() throws InterruptedException {
 
        userDetailPageAction.validateUserDetailPage();
+       Thread.sleep(5000);
     }
 
 }

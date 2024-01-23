@@ -45,11 +45,14 @@ public class ValidateLogin {
 
 
 
+
     }
     @Then("User navigate to home page")
-    public void user_navigate_to_home_page() {
+    public void user_navigate_to_home_page() throws InterruptedException {
+
 
      homePageActions.validateHomePage();
+
 
     }
 

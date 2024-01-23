@@ -10,7 +10,7 @@ Scenario: To Login the Swag Lab using user1
 
 @User2
 Scenario: To Login the Swag Lab using user2
-  When user enters "visual_user" and "secret_sauce"
+  When user enters "locked_out_user" and "secret_sauce"
   Then User navigate to home page
 
 
