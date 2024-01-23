@@ -19,3 +19,10 @@ It consist of below packages:
 - PageObjects
 - Setup
 - CucumberOptions
+
+
+# Execution Steps
+
+Use below comamnd to run the tests and generate the html reporting.
+
+`-mvn test verify`
