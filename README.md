@@ -1,4 +1,4 @@
-# Highlight
+# Highlights
 
 This is Selenium cucumber BDD framework template for WebUI automation with three sample scenarios using Java.
 
