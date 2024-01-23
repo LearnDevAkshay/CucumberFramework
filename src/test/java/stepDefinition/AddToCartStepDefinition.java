@@ -11,7 +11,6 @@ public class AddToCartStepDefinition {
 
     HomePageActions homePageActions ;
     CheckoutPageAction checkoutPageAction ;
-
     UserDetailPageAction userDetailPageAction;
 
     public AddToCartStepDefinition(HomePageActions homePageActions,

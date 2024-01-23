@@ -30,7 +30,7 @@ public class ValidateLogin {
 
     @Given("user is on Login page using browser")
     public void userIsOnLoginPageUsing() {
-        System.out.println("I am in Method ");
+
 
           commonAction.navigateToUrl();
 
@@ -48,7 +48,7 @@ public class ValidateLogin {
     }
     @Then("User navigate to home page")
     public void user_navigate_to_home_page() {
-   //  homepageaction = new homePageActions();
+
      homePageActions.validateHomePage();
 
     }

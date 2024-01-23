@@ -9,14 +9,14 @@ public class Hooks extends BaseClass {
 
     @Before
     public void setup(){
-        System.out.println("Driver Setup Completed");
+
         setupBrowser();
     }
 
     @After()
     public void tearDown(){
 
-        System.out.println("Default After");
+
         driver.quit() ;
 
     }
