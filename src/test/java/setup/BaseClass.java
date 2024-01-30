@@ -7,47 +7,32 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class BaseClass {
 
-    public static WebDriver driver ;
-    ConfigParameter configparameter ;
-
-
-
+    public static WebDriver driver;
+    ConfigParameter configparameter;
 
 
     public void setupBrowser() {
 
-        String browser = configparameter.browser.toLowerCase() ;
+        String browser = configparameter.browser.toLowerCase();
 
-        switch (browser){
+        switch (browser) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+configparameter.driverPath+"chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + configparameter.driverPath + "chromedriver.exe");
                 driver = new ChromeDriver();
                 break;
 
             case "edge":
-                System.setProperty("webdriver.msedge.driver", System.getProperty("user.dir")+configparameter.driverPath+"msedgedriver.exe");
+                System.setProperty("webdriver.msedge.driver", System.getProperty("user.dir") + configparameter.driverPath + "msedgedriver.exe");
                 driver = new EdgeDriver();
         }
 
 
-
-
-    }
-    public WebDriver getDriver(){
-        return driver ;
     }
 
-    public void testDirect(){
-        driver.get("https://demoqa.com/browser-windows");
-
-        driver.findElement(By.id("messageWindowButton")).click();
-
-        for(String winHandle :driver.getWindowHandles()){
-            driver.switchTo().window(winHandle);
-        }
-
-        System.out.println(driver.getPageSource()) ;
+    public WebDriver getDriver() {
+        return driver;
     }
+
 
 }
 

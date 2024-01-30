@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features="src/test/java/features/SwagLab",
-        glue= {"stepDefinition"},
+        features = "src/test/java/features/SwagLab",
+        glue = {"stepDefinition"},
         dryRun = false,
         tags = "@NewMessageWindow",
         plugin = "json:target/jsonReports/cucumber-report.json"

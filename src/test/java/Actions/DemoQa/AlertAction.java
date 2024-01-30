@@ -11,39 +11,40 @@ import java.time.Duration;
 
 public class AlertAction {
 
-    WebDriver driver ;
-    BaseClass baseClass ;
+    WebDriver driver;
+    BaseClass baseClass;
 
-    AlertPage alertPage ;
+    AlertPage alertPage;
 
 
-
-    public AlertAction(BaseClass baseClass){
-     this.baseClass = baseClass;
-     driver = baseClass.getDriver();
-     alertPage = new AlertPage(driver);
+    public AlertAction(BaseClass baseClass) {
+        this.baseClass = baseClass;
+        driver = baseClass.getDriver();
+        alertPage = new AlertPage(driver);
 
     }
 
-    public void clickOnAlertWidgetButton(){
+    public void clickOnAlertWidgetButton() {
         alertPage.alertWidgetButton.click();
     }
 
-   public void clickOnSimpleAlert(){
+    public void clickOnSimpleAlert() {
         alertPage.simpleAlert.click();
-   }
-    public void clickOnTimerAlert(){
+    }
+
+    public void clickOnTimerAlert() {
         alertPage.timerAlert.click();
     }
 
-    public void clickOnConfirmAlert(){
+    public void clickOnConfirmAlert() {
         alertPage.confirmButtonAlert.click();
     }
-    public void inputAlert(){
+
+    public void inputAlert() {
         alertPage.promtButton.click();
     }
 
-    public void acceptTheAlert(){
+    public void acceptTheAlert() {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -52,14 +53,12 @@ public class AlertAction {
         driver.switchTo().alert().accept();
     }
 
-    public void enterTextIntoAlert(){
+    public void enterTextIntoAlert() {
 
 
+        driver.switchTo().alert().sendKeys("My Name");
 
-
-       driver.switchTo().alert().sendKeys("My Name");
-
-       driver.switchTo().alert().accept();
+        driver.switchTo().alert().accept();
 
     }
 

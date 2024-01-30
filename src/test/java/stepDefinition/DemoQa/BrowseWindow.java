@@ -9,25 +9,25 @@ import io.cucumber.java.en.When;
 
 public class BrowseWindow {
 
-    CommonActions commonActions ;
-    HomePageAction homePageAction ;
+    CommonActions commonActions;
+    HomePageAction homePageAction;
 
-    BrowseWindowAction browseWindowAction ;
+    BrowseWindowAction browseWindowAction;
 
     public BrowseWindow(CommonActions commonActions,
                         HomePageAction homePageAction,
-                        BrowseWindowAction browseWindowAction){
+                        BrowseWindowAction browseWindowAction) {
 
-        this.commonActions = commonActions ;
-        this.homePageAction = homePageAction ;
-        this.browseWindowAction = browseWindowAction ;
+        this.commonActions = commonActions;
+        this.homePageAction = homePageAction;
+        this.browseWindowAction = browseWindowAction;
 
     }
 
     @Given("user is on demoqa website")
     public void user_is_on_demoqa_website() throws InterruptedException {
         commonActions.navigateToUrl();
-        Thread.sleep(5000) ;
+        Thread.sleep(5000);
     }
 
     @Given("user click on AlertWindow")
@@ -35,7 +35,7 @@ public class BrowseWindow {
 
         homePageAction.clickOnAlertWindow();
 
-        }
+    }
 
     @Given("user click on BrowseWindow")
     public void user_click_on_browseWindow() throws InterruptedException {
@@ -49,6 +49,7 @@ public class BrowseWindow {
         browseWindowAction.clickOnNewTabButton();
 
     }
+
     @Then("new tab will open")
     public void new_tab_will_open() {
 
@@ -62,6 +63,7 @@ public class BrowseWindow {
     public void user_click_on_new_window_button() {
         browseWindowAction.clickOnNewWindowButton();
     }
+
     @Then("new window will open")
     public void new_window_will_open() {
 
@@ -70,17 +72,17 @@ public class BrowseWindow {
         browseWindowAction.validateNewWindow();
 
     }
+
     @When("user click on new message window button")
     public void user_click_on_new_message_window_button() {
 
         browseWindowAction.clickonNewWindowMessageButton();
     }
+
     @Then("new window with message will open")
     public void new_window_with_message_will_open() {
 
         browseWindowAction.switchToNewWindow();
-
-
 
 
     }

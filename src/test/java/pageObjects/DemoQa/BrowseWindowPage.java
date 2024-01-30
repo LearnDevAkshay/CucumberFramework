@@ -9,28 +9,28 @@ import org.openqa.selenium.support.PageFactoryFinder;
 public class BrowseWindowPage {
 
     @FindBy(xpath = "//span[text()=\"Browser Windows\"]")
-    public WebElement browseWindowButton ;
+    public WebElement browseWindowButton;
 
     @FindBy(id = "tabButton")
-    public WebElement newTabButton ;
+    public WebElement newTabButton;
 
     @FindBy(id = "windowButton")
-    public WebElement windowButton ;
+    public WebElement windowButton;
 
     @FindBy(id = "messageWindowButton")
-    public WebElement newWindowMessageButton ;
+    public WebElement newWindowMessageButton;
 
     @FindBy(id = "sampleHeading")
-    public WebElement newTabText ;
+    public WebElement newTabText;
 
     @FindBy(xpath = "//body")
-    public WebElement newMessageWindowText ;
+    public WebElement newMessageWindowText;
 
-    WebDriver driver ;
+    WebDriver driver;
 
-    public BrowseWindowPage(WebDriver driver){
-        this.driver = driver ;
-        PageFactory.initElements(driver,this);
+    public BrowseWindowPage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
 }

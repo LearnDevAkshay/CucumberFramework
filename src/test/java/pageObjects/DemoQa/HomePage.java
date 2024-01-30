@@ -8,14 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 public class HomePage {
 
     @FindBy(xpath = "//h5[text()='Alerts, Frame & Windows']/parent::div")
-    public WebElement AlertWindowSection ;
+    public WebElement AlertWindowSection;
 
 
+    WebDriver driver;
 
-    WebDriver driver ;
-    public HomePage(WebDriver driver){
+    public HomePage(WebDriver driver) {
 
-        this.driver = driver ;
-        PageFactory.initElements(driver,this);
+        this.driver = driver;
+
+        PageFactory.initElements(driver, this);
     }
 }

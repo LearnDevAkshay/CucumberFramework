@@ -14,26 +14,29 @@ import java.util.ArrayList;
 
 public class HomePageAction {
 
-    WebDriver driver ;
-    BaseClass baseClass ;
-    HomePage homePage ;
+    WebDriver driver;
+    BaseClass baseClass;
+    HomePage homePage;
 
-    public HomePageAction(BaseClass baseClass){
-        this.baseClass = baseClass ;
-        driver = baseClass.getDriver() ;
+    public HomePageAction(BaseClass baseClass) {
+
+        this.baseClass = baseClass;
+
+        driver = baseClass.getDriver();
+
         homePage = new HomePage(driver);
 
 
     }
 
-    public void clickOnAlertWindow(){
+    public void clickOnAlertWindow() {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
+
         js.executeScript("window.scrollBy(0,250)", "");
 
         homePage.AlertWindowSection.click();
     }
-
 
 
 }

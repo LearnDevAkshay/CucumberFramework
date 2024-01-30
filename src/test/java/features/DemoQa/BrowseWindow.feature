@@ -5,7 +5,7 @@ Feature: To validate selenium browse window function
     Given user is on demoqa website
 
 
-    @SeleniumTest @BrowseWindow @NewTab
+  @SeleniumTest @BrowseWindow @NewTab
   Scenario: To test new tab
     Given user click on AlertWindow
     And user click on BrowseWindow

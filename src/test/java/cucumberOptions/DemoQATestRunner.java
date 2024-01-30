@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features="src/test/java/features/DemoQa",
-        glue= {"stepDefinition"},
+        features = "src/test/java/features/DemoQa",
+        glue = {"stepDefinition"},
         dryRun = false,
-        tags = "@NewMessageWindow",
+        tags = "@Frame",
         plugin = "json:target/jsonReports/cucumber-report.json"
 
 )

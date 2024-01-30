@@ -1,4 +1,4 @@
-package stepDefinition.SwagLab;
+package stepDefinition;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -11,24 +11,23 @@ public class Hooks extends BaseClass {
 
 
     @Before
-    public void setup(){
+    public void setup() {
 
         setupBrowser();
     }
 
     @After()
-    public void tearDown(Scenario scenario){
+    public void tearDown(Scenario scenario) {
 
-        if(scenario.isFailed()){
+        if (scenario.isFailed()) {
 
-            byte[] src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(src,"image/png",scenario.getName());
+            byte[] src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(src, "image/png", scenario.getName());
         }
 
-       driver.quit() ;
+        driver.quit();
 
     }
-
 
 
 }

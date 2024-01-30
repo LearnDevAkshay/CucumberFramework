@@ -8,22 +8,19 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-
 public class ValidateLogin {
 
-    CommonAction commonAction ;
-    LoginPageActions loginPageActions ;
-    HomePageAction homePageActions ;
-
-
+    CommonAction commonAction;
+    LoginPageActions loginPageActions;
+    HomePageAction homePageActions;
 
 
     public ValidateLogin(LoginPageActions loginPageActions,
                          HomePageAction homePageActions,
-                         CommonAction commonAction){
+                         CommonAction commonAction) {
 
-        this.loginPageActions = loginPageActions ;
-        this.homePageActions = homePageActions ;
+        this.loginPageActions = loginPageActions;
+        this.homePageActions = homePageActions;
         this.commonAction = commonAction;
 
     }
@@ -32,7 +29,7 @@ public class ValidateLogin {
     public void userIsOnLoginPageUsing() {
 
 
-          commonAction.navigateToUrl();
+        commonAction.navigateToUrl();
 
     }
 
@@ -44,19 +41,16 @@ public class ValidateLogin {
         loginPageActions.clickSubmitButton();
 
 
-
-
     }
+
     @Then("User navigate to home page")
     public void user_navigate_to_home_page() throws InterruptedException {
 
 
-     homePageActions.validateHomePage();
+        homePageActions.validateHomePage();
 
 
     }
-
-
 
 
 }

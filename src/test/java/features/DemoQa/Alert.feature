@@ -13,7 +13,7 @@ Feature: To Test Alert
   @SeleniumTest @Alert @TimerAlert
   Scenario: To test timer alert
     Given user click on AlertWindow
-     And user click on Alerts widget button
+    And user click on Alerts widget button
     When user click in alert button with delay
     Then Alert will pop up
 

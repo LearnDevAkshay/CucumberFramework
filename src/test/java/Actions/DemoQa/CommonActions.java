@@ -8,18 +8,19 @@ public class CommonActions {
 
     BaseClass baseClass;
 
-    WebDriver driver ;
+    WebDriver driver;
 
-    ConfigParameter configParameter ;
+    ConfigParameter configParameter;
 
-    public CommonActions(BaseClass baseClass){
+    public CommonActions(BaseClass baseClass) {
 
-        this.baseClass = baseClass ;
-        driver = baseClass.getDriver() ;
+        this.baseClass = baseClass;
+
+        driver = baseClass.getDriver();
 
     }
 
-    public void navigateToUrl(){
+    public void navigateToUrl() {
 
         driver.navigate().to(configParameter.seleniumTestingUrl);
 
