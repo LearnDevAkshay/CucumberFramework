@@ -1,9 +1,9 @@
-package Actions;
+package Actions.SwagLab;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageObjects.UserDetailPage;
+import pageObjects.SwagLab.UserDetailPage;
 import setup.BaseClass;
 
 public class UserDetailPageAction {

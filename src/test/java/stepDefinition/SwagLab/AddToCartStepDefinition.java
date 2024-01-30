@@ -1,19 +1,19 @@
-package stepDefinition;
+package stepDefinition.SwagLab;
 
-import Actions.CheckoutPageAction;
-import Actions.HomePageActions;
-import Actions.UserDetailPageAction;
+import Actions.SwagLab.CheckoutPageAction;
+import Actions.SwagLab.HomePageAction;
+import Actions.SwagLab.UserDetailPageAction;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
 public class AddToCartStepDefinition {
 
-    HomePageActions homePageActions ;
+    HomePageAction homePageActions ;
     CheckoutPageAction checkoutPageAction ;
     UserDetailPageAction userDetailPageAction;
 
-    public AddToCartStepDefinition(HomePageActions homePageActions,
+    public AddToCartStepDefinition(HomePageAction homePageActions,
                                    CheckoutPageAction checkoutPageAction,
                                    UserDetailPageAction userDetailPageAction){
 

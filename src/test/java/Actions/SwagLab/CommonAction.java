@@ -1,4 +1,4 @@
-package Actions;
+package Actions.SwagLab;
 
 import org.openqa.selenium.WebDriver;
 import setup.BaseClass;

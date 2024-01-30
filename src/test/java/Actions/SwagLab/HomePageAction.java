@@ -1,12 +1,11 @@
-package Actions;
+package Actions.SwagLab;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import pageObjects.HomePage;
+import pageObjects.SwagLab.HomePage;
 import setup.BaseClass;
 
-public class HomePageActions {
+public class HomePageAction {
 
     WebDriver driver ;
 
@@ -14,7 +13,7 @@ public class HomePageActions {
 
     BaseClass baseclass ;
 
-    public HomePageActions(BaseClass baseClass){
+    public HomePageAction(BaseClass baseClass){
         this.baseclass = baseClass;
         this.driver = baseclass.getDriver() ;
         homepage = new HomePage(driver);
@@ -22,10 +21,7 @@ public class HomePageActions {
 
     public  void validateHomePage(){
         try{
-
             String productTitle =  homepage.productListTitle.getText();
-
-
 
         }catch(Exception e){
             Assert.assertTrue("User Not Navigated to Home Page",false);

@@ -6,7 +6,7 @@ Feature: validate end to end case
 
 @ProductAddToCart
 Scenario: To product to cart
-  When user enters "standard_user" and "secret_sauce"
+  Given user enters "standard_user" and "secret_sauce"
   And User navigate to home page
   And user clicks on Add to cart button
   And user clicks on cart link

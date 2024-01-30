@@ -1,8 +1,8 @@
-package stepDefinition;
+package stepDefinition.SwagLab;
 
-import Actions.CommonAction;
-import Actions.HomePageActions;
-import Actions.LoginPageActions;
+import Actions.SwagLab.CommonAction;
+import Actions.SwagLab.HomePageAction;
+import Actions.SwagLab.LoginPageActions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,13 +13,13 @@ public class ValidateLogin {
 
     CommonAction commonAction ;
     LoginPageActions loginPageActions ;
-    HomePageActions homePageActions ;
+    HomePageAction homePageActions ;
 
 
 
 
     public ValidateLogin(LoginPageActions loginPageActions,
-                         HomePageActions homePageActions,
+                         HomePageAction homePageActions,
                          CommonAction commonAction){
 
         this.loginPageActions = loginPageActions ;

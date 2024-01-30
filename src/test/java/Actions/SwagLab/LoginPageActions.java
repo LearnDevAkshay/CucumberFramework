@@ -1,7 +1,7 @@
-package Actions;
+package Actions.SwagLab;
 
 import org.openqa.selenium.WebDriver;
-import pageObjects.LoginPage;
+import pageObjects.SwagLab.LoginPage;
 import setup.BaseClass;
 
 public class LoginPageActions {

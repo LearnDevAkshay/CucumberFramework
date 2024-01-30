@@ -1,5 +1,6 @@
 package setup;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -8,6 +9,9 @@ public class BaseClass {
 
     public static WebDriver driver ;
     ConfigParameter configparameter ;
+
+
+
 
 
     public void setupBrowser() {
@@ -33,6 +37,18 @@ public class BaseClass {
         return driver ;
     }
 
+    public void testDirect(){
+        driver.get("https://demoqa.com/browser-windows");
 
+        driver.findElement(By.id("messageWindowButton")).click();
+
+        for(String winHandle :driver.getWindowHandles()){
+            driver.switchTo().window(winHandle);
+        }
+
+        System.out.println(driver.getPageSource()) ;
+    }
 
 }
+
+

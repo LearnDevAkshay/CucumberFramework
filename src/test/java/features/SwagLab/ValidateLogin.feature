@@ -1,4 +1,4 @@
-Feature: To Validate Login Page
+Feature: validate user login
 
   Background: To navigate to login page
     Given user is on Login page using browser

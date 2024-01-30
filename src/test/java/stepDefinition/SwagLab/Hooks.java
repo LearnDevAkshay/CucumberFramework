@@ -1,4 +1,4 @@
-package stepDefinition;
+package stepDefinition.SwagLab;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -25,7 +25,7 @@ public class Hooks extends BaseClass {
             scenario.attach(src,"image/png",scenario.getName());
         }
 
-        driver.quit() ;
+       driver.quit() ;
 
     }
 

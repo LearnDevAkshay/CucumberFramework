@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.SwagLab;
 
 
 import org.openqa.selenium.WebDriver;
