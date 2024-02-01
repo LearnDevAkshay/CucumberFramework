@@ -10,6 +10,9 @@ public class HomePage {
     @FindBy(xpath = "//h5[text()='Alerts, Frame & Windows']/parent::div")
     public WebElement AlertWindowSection;
 
+    @FindBy(xpath = "//h5[text()=\"Widgets\"]/parent::div")
+    public WebElement widgetWindowSection ;
+
 
     WebDriver driver;
 

@@ -38,5 +38,13 @@ public class HomePageAction {
         homePage.AlertWindowSection.click();
     }
 
+    public void clickOnWidgetWindowSection(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript("window.scrollBy(0,250)", "");
+
+        homePage.widgetWindowSection.click();
+    }
 
 }

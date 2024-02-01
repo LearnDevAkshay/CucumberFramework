@@ -25,7 +25,7 @@ public class Hooks extends BaseClass {
             scenario.attach(src, "image/png", scenario.getName());
         }
 
-        driver.quit();
+        //driver.quit();
 
     }
 

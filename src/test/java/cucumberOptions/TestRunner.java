@@ -6,15 +6,15 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/java/features/DemoQa",
+        features = "src/test/java/features/",
         glue = {"stepDefinition"},
         dryRun = false,
-        tags = "@Frame",
+        tags = "@DatePicker",
         plugin = "json:target/jsonReports/cucumber-report.json"
 
 )
 
-public class DemoQATestRunner {
+public class TestRunner {
 
 
 }

@@ -4,7 +4,7 @@ Feature: validate end to end case
     Given user is on Login page using browser
 
 
-  @ProductAddToCart
+  @ProductAddToCart @SeleniumTest
   Scenario: To product to cart
     Given user enters "standard_user" and "secret_sauce"
     And User navigate to home page
